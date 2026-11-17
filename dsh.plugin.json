@@ -1,0 +1,21 @@
+{
+  "id": "dsh-theme-spiderverse",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "description": "蜘蛛宇宙主题：粉紫天空、橙色余晖、漫画半调网点与漂浮尘埃粒子。",
+  "client": {
+    "main": "./lib/client.js",
+    "inject": [
+      "@deepseek-ai/dsh-client-ui-slots",
+      "@deepseek-ai/dsh-client-ui-settings-general",
+      "@deepseek-ai/dsh-client-ui-settings"
+    ]
+  },
+  "engines": {
+    "dsh": ">=0.1.5-rc.1"
+  },
+  "contributes": {
+    "tools": [],
+    "skills": []
+  }
+}

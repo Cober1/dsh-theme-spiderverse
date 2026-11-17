@@ -1,0 +1,59 @@
+{
+  "name": "dsh-theme-spiderverse",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Spider-Verse wallpaper theme for DeepSeek Harness: full-bleed wallpaper on the right, animated star field with twinkling stars and shooting meteors on the left, comic halftone dots and floating dust.",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-theme",
+    "theme",
+    "spiderverse",
+    "wallpaper",
+    "stars"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cober1/dsh-theme-spiderverse.git"
+  },
+  "homepage": "https://github.com/Cober1/dsh-theme-spiderverse",
+  "bugs": {
+    "url": "https://github.com/Cober1/dsh-theme-spiderverse/issues"
+  },
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./assets/*": "./static/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "static",
+    "dsh.plugin.json",
+    "cordis.patch.yml",
+    "screenshots.json",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-settings-general",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ],
+      "platform": "web"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.1.5-rc.1"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "3.18.4"
+  }
+}
